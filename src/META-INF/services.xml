@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service name="B2B"  targetNamespace="https://reunico.com" scope="application">
+    <description>
+        Credit Registry Stub Service
+    </description>
+    <messageReceivers>
+        <messageReceiver
+                mep="http://www.w3.org/ns/wsdl/in-only"
+                class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver"/>
+        <messageReceiver
+                mep="http://www.w3.org/ns/wsdl/in-out"
+                class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+    </messageReceivers>
+    <parameter name="ServiceClass">com.reunico.B2B</parameter>
+</service>
